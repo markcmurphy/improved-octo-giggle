@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: lightgreen;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:link:active, a:visited:active {
+    color: lightgreen;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: white;
+}
+
+hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+header {
+  text-align: center;
+  font-size: 50px;
+  color: #4d5052;
+}
+
+.item {
+  background-color: plum;
+  border: 1px solid black;
+
+}
+main {
+  flex: 1;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+nav {
+  order: -1;
+}
+
+nav, aside {
+  background-color: lightgreen;
+}
+
+
+@media (min-width: 768px) {
+
+  main {
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+      justify-content: center;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .item {
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    padding: 16px 15px 13.5px 19px;
+    border-radius: 25px;
+    background-color: plum;
+
+  }
+
+  nav, aside {
+    flex: 0 0 12em;
+  }
+}
